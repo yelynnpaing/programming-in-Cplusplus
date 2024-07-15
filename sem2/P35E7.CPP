@@ -6,7 +6,8 @@ void main()
 {
 	clrscr();
 	int intArr[10];
-	int intNum, average, total=0;
+	int intNum, x=0;
+	double total=0.0, average;
 	cout << "\nEnter 10 integer numbers : ";
 	for(int i=0; i<10; i++)
 	{
@@ -20,7 +21,11 @@ void main()
 	for (int j=0; j<10; j++)
 	{
 		if(intArr[j] > average)
+		{
+			x++;
 			cout << intArr[j] << "  ";
+		}
 	}
+	cout << "\ncount of integers greater than the average : " << x ;
 	getch();
 }
