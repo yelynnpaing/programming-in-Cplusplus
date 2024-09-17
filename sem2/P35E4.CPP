@@ -26,7 +26,7 @@ void main()
 			cout << "\nnumbers of employee Above average salary : " << employeeArr[k] << "  ";
 			aboveAverage += employeeArr[k];
 		}
-		else if(salaryArr[i] < avaSalary)
+		else
 		{
 			cout << "\nnumbers of employee below average salary : " << employeeArr[k] << "  ";
 			belowAverage += employeeArr[k];
