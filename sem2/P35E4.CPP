@@ -23,21 +23,21 @@ void main()
 	{
 		if(salaryArr[k] > avaSalary)
 		{
-			cout << "\nabove average : " << salaryArr[k] << "  ";
-			aboveAverage += salaryArr[k];
+			cout << "\nnumbers of employee Above average salary : " << employeeArr[k] << "  ";
+			aboveAverage += employeeArr[k];
 		}
 		else if(salaryArr[i] < avaSalary)
 		{
-			cout << "\nbelow average : " << salaryArr[k] << "  ";
-			belowAverage += salaryArr[k];
+			cout << "\nnumbers of employee below average salary : " << employeeArr[k] << "  ";
+			belowAverage += employeeArr[k];
 		}
 	}
 
 	individual = avaSalary * 1000.0 ;
 
 	cout << "\n\nAverage salary level : " << avaSalary << endl;
-	cout << "\nSalary above average salary level : " << aboveAverage <<endl;
-	cout << "\nSalary below average salary level : " << belowAverage << endl;
+	cout << "\nnumbers of employee above average salary level : " << aboveAverage <<endl;
+	cout << "\nnumbers of employee below average salary level : " << belowAverage << endl;
 	cout << "\nAverage salary earned by individual : " << individual;
 	getch();
 }
