@@ -10,18 +10,17 @@ int linearSearch(char arr[], int size, char key)
 		cout << j;
 	}
     }
-    return 0;
+    return j;
 }
 
 void main()
 {
     clrscr();
     char charArr[] = "HOW ARE YOU?";
-    char key='Y', result;
+    char key='Y';
     int size;
     size = sizeof(charArr) / sizeof(charArr[0]);
-    cout << "\nindex number of " << key << " is ";
     if(linearSearch(charArr, size, key))
-	cout << result << endl;
+	cout << " is index number of " << key;
     getch();
 }
